@@ -1,0 +1,11 @@
+section .container {
+    background-color: #f4f1ec;
+}
+
+body {
+    background-color: #e4e0da;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

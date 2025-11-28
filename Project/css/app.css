@@ -1,0 +1,69 @@
+body{
+
+    background-color: rgb(255, 255, 255);
+}
+.dede{
+    background-color: var (--main-color);
+    transition: 0.5s;
+}
+
+.line{
+    align-items: center;
+    height: 3px;
+    width: 100px;
+    background-color: #000000;
+}
+
+
+.ss{
+    background-color: var (--sec-color);
+    color: var (--text-color);
+    margin: 30px auto;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.logout {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    position: fixed;
+    right: 30px;
+    bottom: 80px;
+    background-color: #02050b;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    border-radius: 10px;
+}
+
+#loading-Screen{
+    background-color: black;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999999;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    --b: 8px; 
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000 10%,#f03355) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+      radial-gradient(farthest-side,#0000 calc(100% - var(--b) - 1px),#000 calc(100% - var(--b)));
+    -webkit-mask-composite: destination-in;
+            mask-composite: intersect;
+    animation:l4 1s infinite steps(10);
+  }
+  @keyframes l4 {to{transform: rotate(1turn)}}
